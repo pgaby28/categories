@@ -1,15 +1,12 @@
-<script setup>
-// Aquí irán tus imports
-</script>
 
 <template>
   <v-app>
     <v-main>
-      <!-- Aquí irá tu contenido -->
+      <CategoryPathFinder />
     </v-main>
   </v-app>
 </template>
+<script setup>
+import CategoryPathFinder from './view/CategoryPathFinder.vue';
+</script>
 
-<style scoped>
-/* Aquí irán tus estilos */
-</style>
