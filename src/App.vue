@@ -9,4 +9,3 @@
 <script setup>
 import CategoryPathFinder from './view/CategoryPathFinder.vue';
 </script>
-

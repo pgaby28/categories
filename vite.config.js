@@ -2,13 +2,25 @@ import { fileURLToPath, URL } from 'node:url'
 
 import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
-import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
-    vueDevTools(),
+    vue({
+      template: {
+        transformAssetUrls: {
+          tags: {
+            'v-img': ['src'],  //<----- add v-img
+            // default values will be overridden if not repeated:
+            video: ["src", "poster"],
+            source: ["src"],
+            img: ["src"],
+            image: ["xlink:href", "href"],
+            use: ["xlink:href", "href"],
+          }
+        }
+      }
+    }),
   ],
   resolve: {
     alias: {
