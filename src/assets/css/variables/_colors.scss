@@ -1,0 +1,55 @@
+:root {
+  --boxShadow: 0px 6px 12px #00000029;
+  --disabled: #BCC4CF;
+  --error: #EF2D5B;
+  --grey: #909CAF;
+  --headerColor: #093B5B;
+  --info:#176D98;
+  --primary: #36A9E1;
+  --primaryDark:#002d4b;
+  --primaryLight:#9AD4F0;
+  --secondary: #1B83B6;
+  --success: #07A63F;
+  --warning: #F9BA04;
+  --white: #fff;
+  --whiteHover: #e6e6e6;
+  --whiteHeader: #e1f5ff;;
+  --whiteBg:#e8f7f9;
+  --deepPink: #BC0045;
+  --lightPink: #BC00451A;
+  --scrollbarTrack:rgb(var(--primaryDark), 0.3);
+}
+
+.primary{
+  color: var(--primary)
+}
+.secondary{
+  color: var(--secondary)
+}
+.warning{
+  color: var(--warning)
+}
+.warning{
+  color: var(--warning)
+}
+.error{
+  color: var(--error)
+}
+.bg-primary{
+  background-color: var(--primary)
+}
+.bg-secondary{
+  background-color: var(--secondary)
+}
+.bg-warning{
+  background-color: var(--warning)
+}
+.bg-warning{
+  background-color: var(--warning)
+}
+.bg-error{
+  background-color: var(--error)
+}
+.headerColor{
+  background-color: var(--headerColor)
+}

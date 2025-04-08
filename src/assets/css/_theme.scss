@@ -1,0 +1,131 @@
+:root {
+    --color-primary: $primary;
+    --color-secondary: $secondary;
+    --color-accent: $bgBlackMedium;
+    --color-info: $blue;
+    --color-success: $lightGreen;
+    --color-warning: $warning;
+    --color-error: $danger;
+    --color-white: $white;
+    --color-blue-outline: $primaryDarkened;
+    --color-grey-background: $paperLight;
+
+    // TODO check sizes - these lines are causing a bug in the footer
+    --header-height: 80px;
+    --tabs-height: 48px;
+}
+
+// Main theme
+/*.theme--light .v-application {
+  background: $white;
+}*/
+.v-list {
+  .mdi-eye-off {
+    color: rgba(0, 0, 0, 0.54);
+  }
+}
+
+.v-application {
+  .mx-30 {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+  .mr-30 {
+    margin-right: 5rem;
+  }
+  // Sidebar items
+  .v-list {
+    .v-list__group__header__prepend-icon {
+      min-width: 40px;
+    }
+    .highlighted,
+    .v-list__group__items .highlighted {
+      background-color: $blue;
+      color: $white;
+      border-radius: 4px;
+    }
+  }
+  .px-30 {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+  }
+
+  .tabs {
+    height: var(--tabs-height);
+  }
+
+  .v-input__prepend-inner {
+    margin-top: 3px !important;
+  }
+
+  .lbl--field {
+    color: $black;
+    line-height: 1rem;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    font-weight: 900;
+  }
+
+  .base-button {
+    border-radius: 5px;
+    background: $paperLight;
+    border: 1px solid $light;
+  }
+
+  .add-item {
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid $grey;
+    position:relative;
+  }
+  /* PROVIDER CV */
+  .action-buttons {
+    right:12px;
+    position:relative;
+    button {
+      border-radius:2px;
+      margin-left: 5px;
+    }
+  }
+  .action-buttons__add {
+    border-radius:2px;
+    background: var(--color-info);
+  }
+  .action-buttons__edit button {
+    background: var(--color-accent);
+  }
+}
+.simple-title {
+  font-size: 1.2rem;
+  font-weight: initial;
+}
+.back {
+  font-size: 1rem;
+  font-weight: initial;
+  text-align: left;
+  text-decoration: underline;
+  font: Regular 16px/19px Roboto;
+  letter-spacing: 0;
+  color: $blue;
+  opacity: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.full-height {
+  height: 100%;
+}
+
+html, body {
+  font-size: 14px;
+}
