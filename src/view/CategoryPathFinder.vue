@@ -3,7 +3,7 @@
     <v-container>
       <v-card class="mx-auto my-6" max-width="600">
         <v-card-title class="text-h4 py-4">
-          Buscador de Rutas de Categorías
+          Category Path Finder
         </v-card-title>
 
         <v-card-text>
@@ -12,8 +12,8 @@
               <v-col cols="9">
                 <v-text-field
                 v-model="searchQuery"
-                label="Nombre de la categoría"
-                placeholder="Ej: category4"
+                label="Category name"
+                placeholder="E.g: category4"
                 variant="outlined"
                 density="comfortable"
                 clearable
@@ -30,32 +30,29 @@
                 @click="searchCategory()"
               >
                 <v-icon start icon="mdi-magnify"></v-icon>
-                Buscar
+                Search
               </v-btn>
             </v-col>
-
-
             </v-row>
-
           </v-form>
 
-          <v-card-subtitle class="px-0 pt-4">Resultado:</v-card-subtitle>
+          <v-card-subtitle class="px-0 pt-4">Result:</v-card-subtitle>
 
           <v-alert v-if="searchResult" color="success" class="mb-4">
             <code class="font-weight-medium">{{ searchResult }}</code>
           </v-alert>
 
           <v-alert v-else-if="searchResult === null" color="error" class="mb-4">
-            Categoría no encontrada
+            Category not found
           </v-alert>
 
           <v-alert v-else color="info" class="mb-4">
-            Ingresa un nombre de categoría para buscar
+            Enter a category name to search
           </v-alert>
 
           <v-divider class="my-4"></v-divider>
 
-          <v-card-subtitle class="px-0">Ejemplos:</v-card-subtitle>
+          <v-card-subtitle class="px-0">Examples:</v-card-subtitle>
 
           <div class="d-flex flex-column">
             <v-btn
