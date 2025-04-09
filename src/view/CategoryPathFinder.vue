@@ -105,6 +105,7 @@ const categories = [
   }
 ];
 
+// Use is made of the internal recursive function, allowing to search for the category and at the same time constructing the path
 const getCategoryPath = (categories, categoryName) => {
   const findPath = (categories, categoryName, currentPath = '') => {
     for (const category of categories) {
